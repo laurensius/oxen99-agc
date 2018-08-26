@@ -12,7 +12,7 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 
 
 if ( !function_exists( 'add_action' ) ) {
-    echo 'Jangan nakal, kalo nakal nanti diseruduk sama OXEN.';
+    echo 'Jangan nakal, kalo nakal nanti diseruduk sama OXEN99.';
 	exit;
 }
 
@@ -32,7 +32,7 @@ function inisialisasi(){
 
 function f_top_menu(){
     $O = new Oxen99();
-    $O->say_hello();
+    $O->say_hello(OXEN99_DIR . "view/page.dashboard.php");
 }
 
 function f_jadwal_grubing(){
@@ -42,12 +42,12 @@ function f_jadwal_grubing(){
 
 function f_bad_keyword(){
     $OBK = new Oxen99_Bad_Keyword();
-    $OBK->load_form();
+    $OBK->load_form(OXEN99_DIR . "view/page.badkeyword.php");
 }
 
 function f_about_oxen99(){
     $O = new Oxen99();
-    $O->about();
+    $O->about(OXEN99_DIR . "view/page.about.php");
 }
 
 add_action( 'admin_menu', 'inisialisasi' );

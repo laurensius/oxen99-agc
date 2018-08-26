@@ -2,12 +2,13 @@
 
 class Oxen99{
 
-    function say_hello(){
-        echo "hello";
+    function say_hello($uri){
+        include $uri;
     }
 
-    function about(){
-        echo "about";
+    function about($uri){
+        // echo "about";
+        include $uri;
     }
 
 
