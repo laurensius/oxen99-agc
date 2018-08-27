@@ -1,5 +1,6 @@
 <div class="wrap">
-    <h1>About OXEN99</h1>
+    <h1 class="wp-heading-inline">About OXEN99</h1>
+    <hr class="wp-header-end">
     <div id="welcome-panel" class="welcome-panel">
 		<input type="hidden" id="welcomepanelnonce" name="welcomepanelnonce" value="29c2db78c8">		
         <div class="welcome-panel-content">
